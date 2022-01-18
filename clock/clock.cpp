@@ -29,10 +29,11 @@ int main()
             system("clear");
         }
         }
-
+        
         while (a==0)
         {
             system("clear");
+            cout<<"The current time is:"<<endl;
             cout<<hour<<":"<<minute<<":"<<second<<endl;
             sleep(1);           //delays the time to imitate increment of 1 second for each loop
             second++;
@@ -42,12 +43,12 @@ int main()
                 second=0;
                 minute++;
             }
-            if (minute>59)
+            else if (minute>59)
             {
                 minute=0;
                 hour++;
             }
-            if (hour>24)
+            else if (hour>24)
             {
                 hour=0;
             }
